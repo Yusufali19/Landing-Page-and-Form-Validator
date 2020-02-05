@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/******** Colors used *********/
+/**************************
+  #887400
+  #857700
+  rgba(145, 123, 0, 0.699),
+  rgba(0, 0, 0, 0.815) 
+*************************/
+
+:root {
+  --success-color: #058510;
+  --error-color: #b40707;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(
+      to left bottom,
+      rgba(145, 123, 0, 0.699),
+      rgba(0, 0, 0, 0.815)
+    ),
+    url(./Image/bg_two.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+nav.navbar {
+  height: 72px;
+  background-color: #fff;
+}
+
+label.logo a {
+  font-family: 'Fira Code';
+  font-size: 25px;
+  line-height: 65px;
+  color: #857700;
+  text-decoration: none;
+  margin-left: 75px;
+  font-weight: 800;
+}
+
+nav ul {
+  float: right;
+  margin-right: 105px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  line-height: 40px;
+  color: #515353;
+  text-decoration: none;
+  font-size: 16.5px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #363838;
+  color: #363838;
+}
+
+div.heading {
+  position: absolute;
+  top: 28%;
+  left: 10%;
+  margin: 0;
+}
+
+div.heading h2 {
+  font-size: 55px;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+div.heading h2 span {
+  color: #fdfcfc;
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+div.heading button {
+  cursor: pointer;
+  background-color: #fff;
+  width: 30%;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+div.heading button:hover {
+  background-color: #857700;
+  border-color: #857700;
+  color: #fff;
+}
+
+.container {
+  position: absolute;
+  top: 18%;
+  left: 70%;
+  width: 400px;
+  background: #fff;
+  background-position: center;
+  color: #363535;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px #615d5d;
+  margin-right: 50px;
+}
+
+.form {
+  padding: 15px 20px;
+}
+
+.form h2 {
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-control input {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  border: 2px solid #878b8a;
+  border-radius: 4px;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: #054747;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  visibility: hidden;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: #054747;
+  color: #fff;
+  width: 100%;
+  border: 2px solid #054747;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.form button:hover {
+  background-color: #058510;
+  border: 2px solid #058510;
+}
